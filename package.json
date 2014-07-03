@@ -25,7 +25,8 @@
     "grunt-karma": "~0.6.2",
     "grunt-open": "~0.2.2",
     "grunt-contrib-copy": "~0.4.1",
-    "deploy-s3": "~0.1.1"
+    "deploy-s3": "~0.1.1",
+    "grunt-protractor-runner": "~1.0.0"
   },
   "scripts": {
     "postinstall": "bower install",
