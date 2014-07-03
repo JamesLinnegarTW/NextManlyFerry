@@ -8,8 +8,10 @@ describe('controllers', function(){
 
   it('should ....', inject(function($controller) {
     //spec body
-    var myCtrl1 = $controller('MyCtrl1', { $scope: {} });
+    var $scope = {};
+    var myCtrl1 = $controller('MyCtrl1', { $scope: $scope });
     expect(myCtrl1).toBeDefined();
+    expect($scope.james).toEqual('James');
   }));
 
   it('should ....', inject(function($controller) {
