@@ -7,7 +7,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-protractor-runner');
-  grunt.loadNpmTasks('grunt-protractor-webdriver');
 
   grunt.initConfig({
     shell: {
@@ -68,7 +67,7 @@ module.exports = function(grunt) {
         your_target: {
             options: {
                 path: 'node_modules/protractor/bin/',
-                command: 'webdriver-manager start'
+                command: 'webdriver-manager start --standalone'
             }
         }
     },

@@ -30,7 +30,7 @@
     "grunt-protractor-webdriver": "~0.1.8"
   },
   "scripts": {
-    "postinstall": "bower install",
+    "postinstall": "bower install && webdriver-manager update",
     "prestart": "npm install",
     "start": "http-server -a localhost -p 8000",
     "pretest": "npm install",
