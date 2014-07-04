@@ -14,6 +14,7 @@ angular.module('myApp.directives', []).
     return {
         restrict: 'E',
         replace: true,
-        template: '<h1>lidless, wreathed in flame, {{1 + 1}} times</h1>'
+        template: '<p class="james">lidless, wreathed in flame, {{1 + 1}} times</p>'
     };
-});;
+  })
+  ;
