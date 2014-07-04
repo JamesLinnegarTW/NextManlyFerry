@@ -7,7 +7,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-protractor-runner');
-  grunt.loadNpmTasks('grunt-protractor-webdriver');
+
 
   grunt.initConfig({
     shell: {
@@ -64,14 +64,6 @@ module.exports = function(grunt) {
         singleRun: true
       }
     },
-    protractor_webdriver: {
-        your_target: {
-            options: {
-                path: 'node_modules/protractor/bin/',
-                command: 'webdriver-manager start --standalone'
-            }
-        }
-    },
     protractor: {
       options: {
         configFile: "node_modules/protractor/referenceConf.js", // Default config file
@@ -90,7 +82,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('test', ['connect:testserver','karma:unit', 'protractor_webdriver', 'protractor']);
+  grunt.registerTask('test', ['connect:testserver','karma:unit', 'protractor']);
 
   //keeping these around for legacy use
   //installation-related
